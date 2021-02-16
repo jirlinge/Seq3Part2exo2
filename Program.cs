@@ -6,7 +6,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("renseignez votre age : \n");
+            int age = Convert.ToInt32(Console.ReadLine());
+            if (age > 18)
+            {
+                Console.WriteLine($"vous avez {age} an vous etes donc majeur");
+            }
+
+            else 
+            {
+                Console.WriteLine($"vous avez {age} an vous etes donc mineur");
+            }
+        }
         }
     }
-}
+
